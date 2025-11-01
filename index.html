@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Peachtree Academy - Escuela de inglés en Querétaro. Innovación, enseñanza personalizada y recursos educativos de calidad.">
+    <title>Peachtree Academy - Escuela de Inglés</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+            border-bottom: 1px solid #dee2e6;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #764ba2;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        section:last-of-type {
+            border-bottom: none;
+        }
+        
+        section h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .vision, .mission {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .vision h3, .mission h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+        }
+        
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .course-card {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .course-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .course-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .methodology {
+            background-color: #f0f4ff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        .methodology h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 2rem auto;
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+            width: 100%;
+        }
+        
+        button:hover {
+            opacity: 0.9;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🍑 Peachtree Academy</h1>
+            <p>Escuela de Inglés en Querétaro</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#vision">Visión</a></li>
+            <li><a href="#mision">Misión</a></li>
+            <li><a href="#metodologia">Metodología</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section id="vision">
+            <h2>Visión</h2>
+            <div class="vision">
+                <h3>Nuestra Visión</h3>
+                <p>
+                    Ser la institución líder en enseñanza de inglés en Querétaro, reconocida por nuestra excelencia académica, 
+                    innovación pedagógica y compromiso con la formación integral de nuestros estudiantes. Buscamos transformar 
+                    vidas a través del dominio del idioma inglés, abriendo puertas a nuevas oportunidades personales y profesionales.
+                </p>
+            </div>
+        </section>
+        
+        <section id="mision">
+            <h2>Misión</h2>
+            <div class="mission">
+                <h3>Nuestra Misión</h3>
+                <p>
+                    Proporcionar educación de calidad superior en inglés mediante metodologías innovadoras, enseñanza personalizada 
+                    y recursos educativos de vanguardia. Nos comprometemos a crear un ambiente inclusivo, motivador y efectivo donde 
+                    cada estudiante desarrolle habilidades lingüísticas sólidas y confianza para comunicarse en inglés en cualquier contexto.
+                </p>
+            </div>
+        </section>
+        
+        <section id="metodologia">
+            <h2>Metodología</h2>
+            <div class="methodology">
+                <h3>Nuestro Enfoque Pedagógico</h3>
+                <p>
+                    En Peachtree Academy utilizamos un enfoque comunicativo e innovador que combina:
+                </p>
+                <ul style="margin-top: 1rem; margin-left: 2rem;">
+                    <li><strong>Enseñanza Personalizada:</strong> Grupos reducidos y atención individualizada para cada estudiante</li>
+                    <li><strong>Aprendizaje Práctico:</strong> Enfoque centrado en la comunicación real y situaciones auténticas</li>
+                    <li><strong>Tecnología Educativa:</strong> Uso de plataformas interactivas y recursos digitales modernos</li>
+                    <li><strong>Ambiente Inclusivo:</strong> Respeto por diferentes estilos de aprendizaje y ritmo individual</li>
+                    <li><strong>Evaluación Continua:</strong> Monitoreo constante del progreso para mejorar resultados</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="cursos">
+            <h2>Cursos Disponibles</h2>
+            <div class="courses">
+                <div class="course-card">
+                    <h3>Inglés Básico</h3>
+                    <p>Ideal para principiantes. Aprende los fundamentos del idioma: vocabulario, gramática básica y conversación elemental.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Inglés Intermedio</h3>
+                    <p>Para estudiantes con conocimiento básico. Desarrolla fluidez, comprensión auditiva y expresión más compleja.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Inglés Avanzado</h3>
+                    <p>Para hablantes avanzados. Perfecciona tu inglés con temas especializados y preparación para certificaciones.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Inglés para Negocios</h3>
+                    <p>Especializado en comunicación empresarial, presentaciones y vocabulario profesional.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Preparación de Exámenes</h3>
+                    <p>Prepárate para certificaciones internacionales como TOEFL, IELTS, Cambridge y más.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Inglés Infantil</h3>
+                    <p>Cursos especialmente diseñados para niños con métodos lúdicos y dinámicos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <p><strong>Dirección:</strong> Querétaro, México</p>
+                <p><strong>Teléfono:</strong> +52 (442) 1234-5678</p>
+                <p><strong>Email:</strong> info@peachtree-academy.mx</p>
+                <p><strong>Horario:</strong> Lunes a Viernes: 8:00 AM - 8:00 PM | Sábado: 9:00 AM - 2:00 PM</p>
+            </div>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Peachtree Academy. Todos los derechos reservados.</p>
+            <p>Innovación, enseñanza personalizada y recursos educativos de calidad.</p>
+            <p>Síguenos en nuestras redes sociales</p>
+        </div>
+    </footer>
+</body>
+</html>
